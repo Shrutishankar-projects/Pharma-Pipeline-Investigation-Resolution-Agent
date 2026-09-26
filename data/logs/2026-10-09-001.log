@@ -1,0 +1,5 @@
+2026-10-09T02:00:00Z INFO  [CLINTRIAL_ETL:2026-10-09-001] pipeline started (trigger=scheduled)
+2026-10-09T02:00:10Z ERROR [extract_clinical_trial_source] connection to clinical_trial_visits_src timed out after 60000ms (host=synthetic-edc-db-01)
+2026-10-09T02:01:15Z ERROR [extract_clinical_trial_source] retry 1/2 failed: ConnectionTimeoutError
+2026-10-09T02:01:18Z ERROR [extract_clinical_trial_source] retry 2/2 failed: ConnectionTimeoutError
+2026-10-09T02:01:19Z ERROR [CLINTRIAL_ETL:2026-10-09-001] pipeline completed status=FAILED failed_stage=extract_clinical_trial_source reason=infrastructure_timeout

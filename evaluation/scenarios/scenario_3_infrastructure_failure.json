@@ -1,0 +1,14 @@
+{
+  "scenario_id": "scenario_3_infrastructure_failure",
+  "description": "Pipeline Infrastructure Failure: EDC source connection timeout on CLINTRIAL_ETL 2026-10-09-001. Must not blame source data.",
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-09-001",
+  "user_request": "Investigate the failed Clinical Trial Data Processing Pipeline run 2026-10-09-001 and recommend the next action.",
+  "approval_decision": "APPROVE",
+  "expected": {
+    "root_cause_category": "infrastructure",
+    "requires_human_approval": true,
+    "cited_source_ids": ["RUNBOOK-301"],
+    "final_status": "COMPLETED"
+  }
+}

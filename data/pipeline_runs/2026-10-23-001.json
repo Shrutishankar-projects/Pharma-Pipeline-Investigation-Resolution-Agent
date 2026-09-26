@@ -1,0 +1,14 @@
+{
+  "_synthetic": true,
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-23-001",
+  "status": "SUCCESS",
+  "trigger": "scheduled",
+  "start_time": "2026-10-23T02:00:00Z",
+  "end_time": "2026-10-23T02:06:32Z",
+  "previous_run_id": "2026-10-16-001",
+  "environment": "synthetic-demo",
+  "record_count_in": 3120,
+  "record_count_out": 3120,
+  "failed_stage": null
+}

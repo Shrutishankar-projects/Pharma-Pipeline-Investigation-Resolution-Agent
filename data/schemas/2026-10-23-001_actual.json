@@ -1,0 +1,15 @@
+{
+  "_synthetic": true,
+  "schema_name": "clinical_metrics_features_v2",
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-23-001",
+  "columns": [
+    {"name": "record_id", "type": "STRING", "nullable": false},
+    {"name": "site_id", "type": "STRING", "nullable": false},
+    {"name": "subject_id", "type": "STRING", "nullable": false},
+    {"name": "lab_result_value", "type": "FLOAT", "nullable": false},
+    {"name": "visit_number", "type": "INTEGER", "nullable": true},
+    {"name": "visit_date", "type": "DATE", "nullable": false},
+    {"name": "adverse_event_flag", "type": "STRING", "nullable": true}
+  ]
+}

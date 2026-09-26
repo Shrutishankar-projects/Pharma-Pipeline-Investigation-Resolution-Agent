@@ -1,0 +1,15 @@
+{
+  "scenario_id": "scenario_2_data_quality_failure",
+  "description": "Data Quality Failure: null-rate (site_id) and duplicate-rate (record_id) threshold breach on CLINTRIAL_ETL 2026-10-16-001.",
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-16-001",
+  "user_request": "Investigate the failed Clinical Trial Data Processing Pipeline run 2026-10-16-001 and recommend the next action.",
+  "approval_decision": "APPROVE",
+  "expected": {
+    "dq_overall_result": "FAIL",
+    "root_cause_category": "data_quality",
+    "requires_human_approval": true,
+    "cited_source_ids": ["SOP-202"],
+    "final_status": "COMPLETED"
+  }
+}

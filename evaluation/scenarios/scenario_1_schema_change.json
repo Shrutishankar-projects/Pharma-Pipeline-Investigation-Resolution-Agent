@@ -1,0 +1,15 @@
+{
+  "scenario_id": "scenario_1_schema_change",
+  "description": "Schema Change: lab_result_value type change (FLOAT -> STRING for qualified/censored lab values) + added lab_qualifier_code column on CLINTRIAL_ETL 2026-10-30-001.",
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-30-001",
+  "user_request": "Investigate the failed Clinical Trial Data Processing Pipeline run 2026-10-30-001. Identify the likely cause, provide supporting evidence, check relevant documentation, and recommend the next action.",
+  "approval_decision": "APPROVE",
+  "expected": {
+    "schema_incompatible": true,
+    "root_cause_category": "schema_change",
+    "requires_human_approval": true,
+    "cited_source_ids": ["SOP-101"],
+    "final_status": "COMPLETED"
+  }
+}

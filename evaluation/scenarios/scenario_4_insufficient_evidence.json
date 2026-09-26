@@ -1,0 +1,13 @@
+{
+  "scenario_id": "scenario_4_insufficient_evidence",
+  "description": "Insufficient Evidence: truncated log, no dataset extract, no schema drift signal, no previous run on record (CLINTRIAL_ETL 2026-10-02-001).",
+  "pipeline_id": "CLINTRIAL_ETL",
+  "run_id": "2026-10-02-001",
+  "user_request": "Investigate the failed Clinical Trial Data Processing Pipeline run 2026-10-02-001 and recommend the next action.",
+  "approval_decision": null,
+  "expected": {
+    "insufficient_evidence": true,
+    "requires_human_approval": false,
+    "final_status": "COMPLETED"
+  }
+}

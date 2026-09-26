@@ -1,0 +1,6 @@
+2026-10-30T02:00:00Z INFO  [CLINTRIAL_ETL:2026-10-30-001] pipeline started (trigger=scheduled)
+2026-10-30T02:00:05Z INFO  [data_ingestion] extracted 3186 rows from clinical_trial_visits_src
+2026-10-30T02:02:40Z WARN  [data_quality_validation] actual schema differs from expected schema (clinical_metrics_features_v2): 1 column added (lab_qualifier_code), 1 column type changed (lab_result_value: FLOAT -> STRING)
+2026-10-30T02:03:44Z ERROR [data_transformation] type coercion failure: column 'lab_result_value' expected FLOAT, received STRING for 640 rows
+2026-10-30T02:03:45Z ERROR [data_transformation] task failed: CAST_ERROR - unable to coerce 'lab_result_value' values (sample: "BLQ", "<0.05", "ND") to FLOAT
+2026-10-30T02:03:47Z ERROR [CLINTRIAL_ETL:2026-10-30-001] pipeline completed status=FAILED failed_stage=data_transformation
